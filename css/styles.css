@@ -13,44 +13,36 @@ h1{ font-family: "Pacifico",cursive;
 text-shadow: black;}
 h2{font-size: 3em;font-weight: bold;}
 h3{font-size: 3em; color: #ec3333;}
-h4{font-size: 1.5em;}
+h4{font-size: 1.5em; font-weight: bolder;}
 p{font-size: 2em;}
 ul{
     list-style: none;
-
+    
 }
-.colorPrincipal{
-    color: #ec3333;
+header{
+    background-color: rgb(250, 250, 250);
+    margin:0;
+    padding:10px 0px;
+    border-bottom: 2px solid #ec3333; 
 }
 nav{
-   
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-ul{
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
+ol{
+    list-style-type:disc;
+}
 a{   
     text-decoration: none;
     color:rgb(0, 0, 0);
     font-size: 1em; 
     font-weight: bold;
 }
-footer{
-    text-align: center;
-    border-top: 1px solid #ec3333;
-    background-color: rgb(250, 250, 250);
-    font-weight: bold;
-    
-}
 
 .button{
-    background-color: #ec3333;
+    background-color:#ec3333 ;
     font-size: 2em;
     font-weight: bold;
     padding: 20px 20px;
@@ -63,13 +55,13 @@ button{
     background-color: #ec3333;
     font-size: 2em;
     font-weight: bold;
-    padding: 20px 20px;
+    padding: 15px 15px;
     border-radius: 10px;
     border: none;
     box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
     color: white;
     margin-top: 0px;
-
+    
 }
 button:hover{
     background-color: #aa2929;
@@ -78,12 +70,6 @@ button:hover{
 .boton_naranja{
     background-color:#ff8a00;
 }
-header{
-    background-color: rgb(250, 250, 250);
-    margin:0;
-    padding:10px 30px;
-    border-bottom: 1px solid #ec3333; 
-}
 /* Pagina Inicio */
 #hero_inicio{
     text-align: center;
@@ -91,7 +77,6 @@ header{
     padding: 80px 30px;
     height: 80vh;
     background-image: url(../assets/img/burguer_inicio.avif);
-    background-color: rgb(0, 0, 0, 0.5);
     background-repeat:no-repeat;
     background-size: cover;
     align-items: center;
@@ -103,44 +88,46 @@ header{
     padding: 100px 30px;
     text-align: center;
 }
-.carta_inicio{
-    width: 40%;
-    height: 30%;
+.carta1{
+    width: 100%;
+    height: 450px;
     display: flex;
     flex-direction: row;
     text-align: left;
+    overflow: hidden;
     background-color:#ff8a00;
-    padding: 80px 30px;
+    padding: 30px 30px;
     margin: 0px;
     border-radius: 20px;
     color: white;
     box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    
+    align-items: center;
 }
-.carta_inicio img{
-    width: 300px;
+.carta1 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
-.carta_inicio2{
+.carta2{
+    width: 100%;
+    height: 450px;
     display: flex;
-    width: 40%;
-    height: 30%;
+    flex-direction: row;
     text-align: left;
+    overflow: hidden;
     background-color: #ec3333;
-    padding: 80px 30px;
-    margin: 0px 0px;
+    padding: 30px 30px;
+    margin: 0px;
     border-radius: 20px;
     color: white;
     box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-}
-.carta_inicio2 img{
-    width: 300px;
-    height: 70%;
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    align-items: center;
+ }
+    
+.carta2 img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
 .delivery_inicio{
     display: flex;
@@ -149,7 +136,7 @@ header{
     background-repeat: no-repeat;
     text-align: center;
     justify-content: center;
-    padding: 100px 150px;
+    padding: 100px 30px;
     font-weight: bold;
 }
 .delivery_inicio img{
@@ -158,98 +145,34 @@ header{
 /* Pagina Menu */
 #hero_menu{
     text-align: center;
-    font-size: 3em;
     margin: 0;
     padding: 80px 30px;
-    background-image:url(../assets/img/Burguers_menu.avif);
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 50vh;
-    align-items: center;
-    color: white;
-    font-weight: bold
- }
-#carta_menu1{
-    text-align: left;
-    background-color:#ff8a00;
-    padding: 80px 30px;
-    margin: 0px 300px;
-    border-radius: 20px;
-    color: white;
-    background-image: url("../assets/img/Crispy_Chicken.avif");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-#carta_menu2{
-    text-align: left;
-    background-color:#ec3333;
-    padding: 80px 30px;
-    margin: 0px 300px;
-    border-radius: 20px;
-    color: white;
-    background-image: url("../assets/img/Hamburguesa_Burga.avif");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-#carta_menu3{
-    text-align: left;
-    background-color:#ff8a00;
-    padding: 80px 30px;
-    margin: 0px 300px;
-    border-radius: 20px;
-    color: white;
-    background-image: url("../assets/img/Burga_veggie.avif");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-#carta_menu4{
-    text-align: left;
-    background-color:#ec3333;
-    padding: 80px 30px;
-    margin: 0px 300px;
-    border-radius: 20px;
-    color: white;
-    background-image: url("../assets/img/Burga_xtreme.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-}
-/* Pagina sobre nosotros */
-#hero_sobre_nosotros{
-    text-align: center;
-    margin: 0;
-    padding: 80px 30px;
-    background-image:url(../assets/img/Sobre_Nosotros_fondo.avif);
+    background-image:url(../assets/img/burguers_menu.avif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
+}
+/* Pagina sobre nosotros */
+#hero_sobre_nosotros{
+    text-align: center;
+    margin: 0;
+    padding: 80px 30px;
+    background-image:url(../assets/img/sobre_nosotros_fondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
 }
 #seccion_sobre_nosotros{
     text-align: left;
-    padding:50px 100px;
+    padding:100px 100px;
 }
 #seccion_sobre_nosotros h3{
     text-align: center;
@@ -278,7 +201,6 @@ header{
     margin: 100px ;
     border-radius: 20px;
     box-shadow : 2px 2px 10px rgb(0, 0, 0,0.5);
-    
 }
 #seccion_nuestros_servicios{
     font-size: 1.5em;
@@ -287,27 +209,37 @@ header{
 #seccion_nuestros_servicios h3{
     text-align: center;
 }
+.cartasNS{
+    padding: 200px 40px;
+}
 /* Pagina Donde Encontrarnos */
 #hero_donde_encontrarnos{
     text-align: center;
     margin: 0;
     padding: 80px 30px;
-    background-image:url(../assets/img/Donde_encontrarnos_fondo.webp);
+    background-image:url(../assets/img/donde_encontrarnos_fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
 }
 .mapa{
-   text-align: center;
-   padding-top: 30px;
+    text-align: center;
+    padding-top: 30px;
 }
 iframe{
     align-items: center;
     padding: 50px 50px;
     width: 80vh;
     height: 60vh;
+}
+footer{
+    text-align: center;
+    border-top: 2px solid #ec3333;
+    background-color: rgb(250, 250, 250);
+    font-weight: bold;
+    padding: 10px 10px;
 }

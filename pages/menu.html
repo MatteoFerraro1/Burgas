@@ -5,52 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burgas</title>
     <link rel="shortcut icon" href="../assets/icon/Burgas.ico" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../assets/icon/burgas.ico" alt="LogoBurgas" width="50px" height="50px">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="./nuestrosservicios.html">Nuestros servicios</a></li>
-                <li><a href="./dondeencontrarnos.html">Donde encontrarnos</a></li>
-                <li><a href="#"><button>PEDIR AHORA</button></a></li>
-            </ul>
-        </nav>
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center" href="../index.html"><img src="../assets/icon/burgas.ico" alt="LocoBurgas" width="50px"></a>
+            <a class="flex-sm-fill text-sm-center" href="../index.html">Inicio</a>
+            <a class="flex-sm-fill text-sm-center" href="./menu.html">Menú</a>
+            <a class="flex-sm-fill text-sm-center" href="./sobrenosotros.html">Sobre Nosotros</a>
+            <a class="flex-sm-fill text-sm-center" href="./nuestrosservicios.html">Nuestros Servicios</a>
+            <a class="flex-sm-fill text-sm-center" href="./dondeencontrarnos.html">Donde Encontrarnos</a>
+            <a class="flex-sm-fill text-sm-center" href="./menu.html"><button>PEDIR AHORA</button></a></li>
+          </nav>
     </header>
     <main>
         <section>
             <div id="hero_menu">
-                <h2>MENU</h2>
+                <h2>MENÚ</h2>
             </div>
-            <article id="carta_menu1">
-                <h4>CRISPY CHICKEN</h4>
-                <p>Hamburguesa de pollo crujiente servida en un pan de papa, con lechuga, tomate y salsa Burga. Con porción de papas incluída.<br>$1.999</p>
-                <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button></form>
-            </article>
-            <article id="carta_menu2">
-                <h4>BURGA DOBLE</h4>
-                <p>Hamburguesa de dos medallones de carne servida en un pan de papa, con bacon crujiente y queso cheddar. Con porción de papas incluída.<br>$2.999</p>
-                <form action=""><input type="submit" value="AGREGAR AL CARRO"class="button" class="botonNaranja"></form>
-            </article>
-            <article id="carta_menu3">
-                <h4>BURGA VEGGIE</h4>
-                <p>Hamburguesa vegetariana servida en pan de papa negro, con lechuga, tomate, cebolla y salsa Burga. Con porción de papas incluída.<br>$1.999</p>
-                <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button></form>
-            </article>
-            <article id="carta_menu4">
-                <h4>BURGA XTREME</h4>
-                <p>Hamburguesa de 5 medallones de carne servida en pan de papa, con bacon y cheddar. Con porción de papas incluída.<br>$4.999</p>
-                <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button class="botonNaranja"></form>
-            </article>
+            <section class="popular_burga container-fluid">
+                <div class="row">
+                    <article class="col-sm-12 col-md-6">
+                        <div class="carta1 container-fluid">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h4>CRISPY CHICKEN</h4>
+                                    <p>Hamburguesa de pollo crujiente servida en un pan de papa, con lechuga, tomate y mayonesa Burga</p>
+                                    <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button></form>
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/crispy_chicken.avif" alt="Crispy Chicken">
+                                </div>
+                            </div>
+                        </div><br>
+                    </article>
+                    <article class="col-sm-12 col-md-6">
+                        <div class="carta2 container-fluid">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h4>BURGA DOBLE</h4>
+                                    <p>Hamburguesa de dos medallones de carne servida en un pan de papa, con bacon crujiente y queso cheddar</p>
+                                    <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button></form>
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/hamburguesa_burga.avif" alt="Burga Doble">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div> <br>
+                <div class="row">
+                    <article class="col-sm-12 col-md-6">
+                        <div class="carta2 container-fluid">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h4>BURGA VEGGIE</h4>
+                                    <p>Hamburguesa vegetariana servida en pan de papa negro, con lechuga, tomate, cebolla y salsa Burga. Con porción de papas incluída.<br> $1.999</p>
+                                    <form action=""><input type="submit" value="AGREGAR AL CARRO"class=button></form>
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/burga_veggie.avif" alt="Burga Veggie">
+                                </div>
+                            </div>
+                        </div><br>
+                    </article>
+                    <article class="col-sm-12 col-md-6">
+                        <div class="carta1 container-fluid">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h4>BURGA XTREME</h4>
+                                    <p>Hamburguesa de 5 medallones de carne servida en pan de papa, con bacon y cheddar. Con porción de papas incluída.<br>$4.999</p>
+                                    <form action=""><input type="submit" value="AGREGAR AL CARRO"class="button">
+                                </div>
+                                <div class="col-4">
+                                    <img src="../assets/img/burga_xtreme.jpg" alt="Burga Xtreme">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+ 
         </section>
     </main>
     <footer>
         <a href="#"><Button>PEDIR AHORA</Button></a>
         &copy;Burgas
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
