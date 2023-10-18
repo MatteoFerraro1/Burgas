@@ -1,0 +1,27 @@
+#hero_donde_encontrarnos{
+    text-align: center;
+    margin: 0;
+    padding: 80px 30px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(../assets/img/donde_encontrarnos_fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.mapa{
+    text-align: center;
+    padding-top: 30px;
+}
+iframe{
+    align-items: center;
+    padding: 50px 50px;
+    width: 80vh;
+    height: 60vh;
+}
