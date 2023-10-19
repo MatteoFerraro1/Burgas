@@ -1,9 +1,12 @@
+$colorPrincipal:#ec3333;
+$colorSecundario:#ff8a00;
+
 h1{ font-family: "Pacifico",cursive;
-    color: #ec3333;
+    color: $colorPrincipal;
     font-size: 5em;
 text-shadow: black;}
 h2{font-size: 3em;font-weight: bold;}
-h3{font-size: 3em; color: #ec3333;}
+h3{font-size: 3em; color: $colorPrincipal;}
 h4{font-size: 1.5em; font-weight: bolder;}
 p{font-size: 2em;}
 a{   
@@ -18,7 +21,7 @@ header{
     background-color: rgb(250, 250, 250);
     margin:0;
     padding:10px 0px;
-    border-bottom: 2px solid #ec3333; 
+    border-bottom: 2px solid $colorPrincipal; 
     nav{
         flex-direction: row;
         justify-content: space-evenly;
@@ -46,7 +49,7 @@ button {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color:#ec3333;
+        background-color:$colorPrincipal;
         border-radius: 10px;
         z-index: -2;
     }
@@ -57,7 +60,7 @@ button {
         left: 0;
         width: 0%;
         height: 100%;
-        background-color: darken(#ec3333, 15%);
+        background-color: darken($colorPrincipal, 15%);
         transition: all .3s;
         border-radius: 10px;
         z-index: -1;
@@ -70,7 +73,7 @@ button {
     }
 }
 input.button{
-    background-color:#ec3333 ;
+    background-color:$colorPrincipal ;
     font-size: 2em;
     font-weight: bold;
     padding: 20px 20px;
@@ -99,7 +102,7 @@ input.button{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color:#ff8a00;
+        background-color:$colorSecundario;
         border-radius: 10px;
         z-index: -2;
     }
@@ -110,7 +113,7 @@ input.button{
         left: 0;
         width: 0%;
         height: 100%;
-        background-color: darken(#ff8a00, 15%);
+        background-color: darken($colorSecundario, 15%);
         transition: all .3s;
         border-radius: 10px;
         z-index: -1;
@@ -124,7 +127,7 @@ input.button{
 }
 footer{
     text-align: center;
-    border-top: 2px solid #ec3333;
+    border-top: 2px solid $colorPrincipal;
     background-color: rgb(250, 250, 250);
     font-weight: bold;
     padding: 10px 10px;
