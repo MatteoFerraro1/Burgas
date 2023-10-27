@@ -9,6 +9,7 @@
         url(../assets/img/sobre_nosotros_fondo.avif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 80vh;
     align-items: center;
     color: white;
@@ -18,11 +19,12 @@
 #seccion_sobre_nosotros{
     text-align: left;
     padding:100px 100px;
-    h3{
+    h2{
         text-align: center;
     }
-    h4{
+    h3{
         font-size: 2em;
         text-align: center;
+        color: black;
     }
 }

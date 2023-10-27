@@ -8,20 +8,21 @@ body {
 }
 
 h1 {
-  font-family: "Pacifico", cursive;
-  color: #ec3333;
-  font-size: 5em;
+  font-size: 3em;
+  font-weight: bold;
   text-shadow: black;
 }
 
 h2 {
   font-size: 3em;
-  font-weight: bold;
+  color: #ec3333;
+  text-align: center;
 }
 
 h3 {
-  font-size: 3em;
-  color: #ec3333;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: bolder;
 }
 
 h4 {
@@ -174,9 +175,15 @@ footer {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/burguer_inicio.avif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   align-items: center;
   color: white;
   font-weight: bold;
+}
+#hero_inicio h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5em;
+  color: #ec3333;
 }
 
 .popular_burga {
@@ -189,12 +196,13 @@ footer {
   width: 100%;
   height: 450px;
   display: flex;
+  box-sizing: border-box;
   flex-direction: row;
   text-align: left;
   overflow: hidden;
   background-color: #ff8a00;
   padding: 30px 30px;
-  margin: 0px;
+  margin: 0;
   border-radius: 20px;
   color: white;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -253,6 +261,7 @@ footer {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/burguers_menu.avif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 80vh;
   align-items: center;
   color: white;
@@ -267,6 +276,7 @@ footer {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/sobre_nosotros_fondo.avif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 80vh;
   align-items: center;
   color: white;
@@ -278,12 +288,13 @@ footer {
   text-align: left;
   padding: 100px 100px;
 }
-#seccion_sobre_nosotros h3 {
+#seccion_sobre_nosotros h2 {
   text-align: center;
 }
-#seccion_sobre_nosotros h4 {
+#seccion_sobre_nosotros h3 {
   font-size: 2em;
   text-align: center;
+  color: black;
 }
 
 #hero_nuestros_servicios {
@@ -312,12 +323,25 @@ footer {
   font-size: 1.5em;
   padding: 0px 100px;
 }
-#seccion_nuestros_servicios h3 {
+#seccion_nuestros_servicios h2 {
   text-align: center;
 }
 
 .cartasNS {
   padding: 200px 40px;
+}
+
+.card {
+  justify-content: center;
+}
+.card img {
+  object-fit: cover;
+}
+
+.titulo-carta {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
 }
 
 #hero_donde_encontrarnos {
@@ -342,7 +366,7 @@ footer {
 iframe {
   align-items: center;
   padding: 50px 50px;
-  width: 80vh;
+  width: 80vw;
   height: 60vh;
 }
 
@@ -351,39 +375,97 @@ iframe {
     font-size: 4rem;
   }
   h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 3.3rem;
+    font-size: 1.5rem;
   }
   h4 {
     font-size: 1.3rem;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   button {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .boton_naranja {
-    font-size: 1.5em;
-  }
-  .carta1 {
-    height: 350px;
-  }
-  .carta2 {
-    height: 350px;
+    font-size: 1.2em;
   }
   input.button {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
-  ul {
+  #hero_inicio h1 {
+    font-size: 3rem;
+  }
+  .carta1 {
+    height: 500px;
+    text-align: center;
+    padding: 10px 90px;
+  }
+  .carta1 img {
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .carta1 p {
+    text-align: left;
+  }
+  .carta2 {
+    height: 500px;
+    text-align: center;
+  }
+  .carta2 img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .carta2 p {
+    text-align: left;
+  }
+  .cardmq {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .delivery_inicio {
+    width: 100%;
+  }
+  .delivery_inicio img {
+    width: 0;
+  }
+  #hero_sobre_nosotros h1 {
+    font-size: 3.5rem;
+  }
+  #seccion_sobre_nosotros {
+    padding: 15px 30px;
+  }
+  #seccion_sobre_nosotros h2 {
+    font-weight: bold;
+  }
+  #seccion_sobre_nosotros h3 {
+    font-size: 1.5rem;
+  }
+  #hero_nuestros_servicios h1 {
+    font-size: 3rem;
+  }
+  .card {
     padding: 10px;
   }
+  .titulo-carta {
+    font-size: 1.5rem;
+  }
+  #seccion_nuestros_servicios {
+    padding: 25px;
+  }
+  #hero_donde_encontrarnos h1 {
+    font-size: 2.5rem;
+  }
   iframe {
-    width: 500px;
-    margin: 10px;
-    padding: 30px;
+    width: 90vw;
+    height: 50vh;
+    padding: 0;
   }
 }
 

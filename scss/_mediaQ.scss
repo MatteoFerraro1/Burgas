@@ -1,20 +1,73 @@
 
  @media (max-width: 600px){
+    //general//
     h1{font-size: 4rem;}
-    h2{font-size: 3.5rem;}
-    h3{font-size: 3.3rem;}
+    h2{font-size: 2rem;}
+    h3{font-size: 1.5rem;}
     h4{font-size: 1.3rem;}
-    p{font-size: 1.3rem;}
-    button{font-size: 1.5em;}
-    .boton_naranja{font-size: 1.5em;}
-    .carta1{ height: 350px;}
-    .carta2{height: 350px;}
-    input.button{font-size: 1.3rem;}
-    ul{padding: 10px;}
+    p{font-size: 1.2rem;}
+    button{font-size: 1.2em;}
+    .boton_naranja{font-size: 1.2em;}
+    input.button{font-size: 1rem;}
+    //Paginas Inicio y Menu//
+    #hero_inicio{
+     h1{ font-size: 3rem;}
+    }
+    .carta1{ height: 500px;
+        text-align: center;
+        padding:10px 90px ;
+        img{height: 200px;
+            width: 250px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        p{text-align: left;}
+    }
+    .carta2{height: 500px;
+            text-align: center;
+        img{height: 200px;
+            width: 300px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        p{text-align: left;}
+    }
+    .cardmq{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .delivery_inicio{
+        width: 100%;
+        img{
+            width: 0;
+        }
+    }
+    //Pagina sobre nosotros//
+    #hero_sobre_nosotros{
+        h1{font-size: 3.5rem;}
+    }
+    #seccion_sobre_nosotros{
+        padding: 15px 30px;
+        h2{font-weight: bold;}
+        h3{font-size: 1.5rem;}
+    }
+    //Pagina nuestros servicios//
+    #hero_nuestros_servicios{
+        h1{font-size: 3rem;}
+    }
+    .card{padding: 10px;}
+    .titulo-carta{font-size: 1.5rem;}
+    #seccion_nuestros_servicios{padding: 25px;}
+    //Pagina donde encontrarnos//
+    #hero_donde_encontrarnos{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
     iframe{
-        width: 500px;
-        margin: 10px;
-        padding: 30px;
+        width: 90vw;
+        height: 50vh;
+        padding: 0;
     }
     
 }
