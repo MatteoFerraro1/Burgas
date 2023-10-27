@@ -333,6 +333,7 @@ footer {
 
 .card {
   justify-content: center;
+  align-items: center;
 }
 .card img {
   object-fit: cover;
@@ -401,7 +402,7 @@ iframe {
   .carta1 {
     height: 500px;
     text-align: center;
-    padding: 10px 90px;
+    padding: 10px;
   }
   .carta1 img {
     height: 200px;
@@ -414,6 +415,7 @@ iframe {
   }
   .carta2 {
     height: 500px;
+    padding: 10px;
     text-align: center;
   }
   .carta2 img {
@@ -440,6 +442,7 @@ iframe {
   }
   #seccion_sobre_nosotros {
     padding: 15px 30px;
+    margin-bottom: 30px;
   }
   #seccion_sobre_nosotros h2 {
     font-weight: bold;
@@ -448,16 +451,25 @@ iframe {
     font-size: 1.5rem;
   }
   #hero_nuestros_servicios h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .seccion_nuestros_servicios {
+    width: 95vw;
   }
   .card {
     padding: 10px;
+    margin: 0;
+  }
+  .card img {
+    height: 200px;
   }
   .titulo-carta {
     font-size: 1.5rem;
   }
   #seccion_nuestros_servicios {
-    padding: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
   }
   #hero_donde_encontrarnos h1 {
     font-size: 2.5rem;
@@ -466,6 +478,7 @@ iframe {
     width: 90vw;
     height: 50vh;
     padding: 0;
+    margin-bottom: 30px;
   }
 }
 
