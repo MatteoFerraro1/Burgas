@@ -6,11 +6,59 @@ h2{font-size: 3em; color: $colorPrincipal;text-align: center;}
 h3{font-size: 1.5em;color: #fff; font-weight: bolder;}
 h4{font-size: 1.5em; font-weight: bolder;}
 p{font-size: 2em;}
-a{   
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-size: 1em; 
+a {
+    color: black;
     font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+    padding-bottom:10px ;
+  }
+  
+  a:hover {
+    color: $colorPrincipal;
+    right: 0;
+    text-decoration: none;
+  }
+  
+  a:hover:after {
+    border-color: $colorPrincipal;
+    right: 0;
+  }
+  
+  a:after {
+    border-radius: 1em;
+    border-top: .1em solid $colorPrincipal;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1),
+                border-color .4s ease-out;
+  }
+  
+  a:hover:after {
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    border-color:$colorPrincipal ;
+  }
+  
+  @keyframes anchor-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+    40%, 60% {
+      left: 0;
+      right: 0;
+    }
+    90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+  }
+li{padding-bottom: 20px;
+
 }
 ol{list-style-type:disc;}
 
@@ -25,7 +73,11 @@ header{
         justify-content: space-evenly;
         align-items: center;
         ul{ list-style: none;}
+        border-bottom: #ec3333 3px solid;
       }
+.offcanvas-header{
+    border-bottom: #ec3333 solid 3px;
+}
 }
 button {
     display: inline-block;
@@ -69,6 +121,78 @@ button {
             width: 100%;
         }
     }
+}
+#navTitulo{
+    font-family: "Pacifico",cursive;
+    font-weight: bold;
+    color: $colorPrincipal;
+}
+.nav-link{
+    font-weight: bold;
+    a {
+        color: $colorPrincipal;
+        position: relative;
+        text-decoration: none;
+        transition: color .4s ease-out;
+      }
+      
+      a:hover {
+        color: $colorPrincipal;
+        right: 0;
+        text-decoration: none;
+      }
+      
+      a:hover:after {
+        border-color: $colorPrincipal;
+        right: 0;
+      }
+      
+      a:after {
+        border-radius: 1em;
+        border-top: .1em solid $colorPrincipal;
+        content: "";
+        position: absolute;
+          right: 100%;
+          bottom: .14em;
+          left: 0;
+        transition: right .4s cubic-bezier(0,.5,0,1),
+                    border-color .4s ease-out;
+      }
+      
+      a:hover:after {
+        animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+        border-color:$colorPrincipal ;
+      }
+      
+      @keyframes anchor-underline {
+        0%, 10% {
+          left: 0;
+          right: 100%;
+        }
+        40%, 60% {
+          left: 0;
+          right: 0;
+        }
+        90%, 100% {
+          left: 100%;
+          right: 0;
+        }
+      }
+} 
+.btnNav{
+    width: 40;
+    border: none;
+    border-radius: none;
+    opacity: none;
+}
+.iconNav{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 input.button{
     background-color:$colorPrincipal ;

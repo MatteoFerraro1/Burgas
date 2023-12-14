@@ -18,14 +18,38 @@
 </head>
 <body>
     <header>
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center" href="#"><img src="./assets/icon/burgas.ico" alt="LocoBurgas" width="50px"></a>
-            <a class="flex-sm-fill text-sm-center" href="#">Inicio</a>
-            <a class="flex-sm-fill text-sm-center" href="./pages/menu.html">Menú</a>
-            <a class="flex-sm-fill text-sm-center" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
-            <a class="flex-sm-fill text-sm-center" href="./pages/nuestrosservicios.html">Nuestros Servicios</a>
-            <a class="flex-sm-fill text-sm-center" href="./pages/dondeencontrarnos.html">Donde Encontrarnos</a>
-            <a class="flex-sm-fill text-sm-center" href="./pages/menu.html"><button>PEDIR AHORA</button></a></li>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/assets/icon/burgas.ico" alt="Icono Burgas" width="50"></a>
+              <button class="btnNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="iconNav"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 id="navTitulo">BURGAS</h5>
+                  <button type="button" class="btnNav" data-bs-dismiss="offcanvas" aria-label="Close">  <span class="iconNav"></span></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  aria-current="page" href="/pages/menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  aria-current="page" href="/pages/nuestrosservicios.html">Nuestros servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="/pages/sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  aria-current="page" href="/pages/dondeencontrarnos.html">Dónde encontrarnos</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </nav>
     </header>
     <main>
