@@ -162,9 +162,12 @@ button:hover:before {
 }
 
 .iconoNav {
-  width: 52px;
-  margin-right: 25px;
-  padding-bottom: 15px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
 }
 
 .nav-link {
@@ -219,6 +222,8 @@ button:hover:before {
   border: none;
   border-radius: none;
   opacity: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .iconNav {
