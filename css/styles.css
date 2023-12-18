@@ -158,12 +158,12 @@ button:hover:before {
 #navTitulo {
   font-family: "Pacifico", cursive;
   font-weight: bold;
+  font-size: 40px;
   color: #ec3333;
 }
 
-.iconoNav {
-  width: 50px;
-  margin-bottom: 15px;
+.divNav {
+  display: flex;
 }
 
 .navbar-brand {

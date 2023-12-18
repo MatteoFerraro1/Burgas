@@ -125,11 +125,11 @@ button {
 #navTitulo{
     font-family: "Pacifico",cursive;
     font-weight: bold;
+    font-size: 40px;
     color: $colorPrincipal;
 }
-.iconoNav{
-    width: 50px;
-    margin-bottom: 15px;
+.divNav{
+  display: flex;
 }
 .navbar-brand{
     margin-left: 20px;
