@@ -162,6 +162,13 @@ button:hover:before {
   color: #ec3333;
 }
 
+.navTituloCarrito {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ec3333;
+}
+
 .divNav {
   display: flex;
 }
@@ -217,6 +224,13 @@ button:hover:before {
   }
 }
 
+.btnCarrito {
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
 .btnNav {
   width: 40;
   border: none;
@@ -234,6 +248,13 @@ button:hover:before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+
+.imgProducto {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 input.button {

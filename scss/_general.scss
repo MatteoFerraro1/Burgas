@@ -128,6 +128,12 @@ button {
     font-size: 40px;
     color: $colorPrincipal;
 }
+.navTituloCarrito{
+  font-family: "Pacifico",cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: $colorPrincipal;
+}
 .divNav{
   display: flex;
 }
@@ -186,6 +192,13 @@ button {
         }
       }
 } 
+.btnCarrito{
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-right: 10px;
+  
+}
 .btnNav{
     width: 40;
     border: none;
@@ -202,6 +215,12 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+.imgProducto{
+  width: 60px;
+  height:60px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 input.button{
     background-color:$colorPrincipal ;
