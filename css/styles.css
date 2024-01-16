@@ -92,6 +92,11 @@ ol {
   list-style-type: disc;
 }
 
+td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 header {
   background-color: rgb(250, 250, 250);
   margin: 0;
@@ -238,6 +243,16 @@ button:hover:before {
   opacity: none;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.btnPagar {
+  display: flex;
+}
+
+#divTabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .iconNav {
@@ -422,6 +437,23 @@ footer {
   font-size: 2em;
 }
 
+.vaciarCarrito {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation: none;
+  cursor: pointer;
+}
+
+.borrarProducto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation: none;
+  cursor: pointer;
+}
+
 #hero_sobre_nosotros {
   text-align: center;
   margin: 0;
@@ -583,6 +615,8 @@ iframe {
   .cardmq {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
   .delivery_inicio {
     width: 100%;

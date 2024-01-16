@@ -61,6 +61,10 @@ li{padding-bottom: 20px;
 
 }
 ol{list-style-type:disc;}
+td{
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
 header{
@@ -207,6 +211,16 @@ button {
     margin-left: 20px;
     margin-right: 20px;
 }
+.btnPagar{
+  display: flex;
+
+}
+#divTabla{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .iconNav{
     display: block;
     width: 30px;

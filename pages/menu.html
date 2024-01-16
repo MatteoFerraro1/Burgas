@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -39,13 +40,14 @@
                                     <th>Nombre</th>
                                     <th>Precio</th>
                                     <th>Cantidad</th>
-                                    <th><a id="vaciarCarrito" href=""><img src="../assets/icon/X.ico" width="15px" alt=""></a></th>
+                                    <th><div class="vaciarCarrito"><img src="../assets/icon/X.ico" width="15px" class="vaciarCarrito" alt="X eliminar producto"></div></th>
                                 </tr>
                             </thead>
                             <tbody>
                
                             </tbody>
                         </table>
+                        <button id="btnPagar">PAGAR AHORA</button>
                     </div>
                   </div>
                 </div>
@@ -94,7 +96,7 @@
                             <div class="row cardmq">
                                 <div class="col-md-8">
                                     <h3>CRISPY CHICKEN</h3>
-                                    <p>Hamburguesa de pollo crujiente servida en un pan de papa, con lechuga, tomate y mayonesa Burga.</p><p class="precio">$1.999</p>
+                                    <p>Hamburguesa de pollo crujiente servida en un pan de papa, con lechuga, tomate y mayonesa Burga.</p><p class="precio"></p>
                                     <form  data-id="1" action=""><input type="submit" value="AGREGAR AL CARRO"class="button agregarCarrito" ></form>
                                 </div>
                                 <div class="col-md-4">
@@ -108,7 +110,7 @@
                             <div class="row cardmq">
                                 <div class="col-md-8">
                                     <h3>BURGA DOBLE</h3>
-                                    <p>Hamburguesa de dos medallones de carne servida en un pan de papa, con bacon crujiente y queso cheddar.</p><p class="precio">$3.999</p>
+                                    <p>Hamburguesa de dos medallones de carne servida en un pan de papa, con bacon crujiente y queso cheddar.</p><p class="precio"></p>
                                     <form data-id="2" action=""><input type="submit" value="AGREGAR AL CARRO"class="button agregarCarrito" ></form>
                                 </div>
                                 <div class="col-md-4">
@@ -124,7 +126,7 @@
                             <div class="row cardmq">
                                 <div class="col-md-8">
                                     <h3>BURGA VEGGIE</h3>
-                                    <p>Hamburguesa vegetariana servida en pan de papa negro, con lechuga, tomate, cebolla y salsa Burga.</p><p class="precio">$1.999</p>
+                                    <p>Hamburguesa vegetariana servida en pan de papa negro, con lechuga, tomate, cebolla y salsa Burga.</p><p class="precio"></p>
                                     <form data-id="3" action=""><input type="submit" value="AGREGAR AL CARRO"class="button agregarCarrito" ></form>
                                 </div>
                                 <div class="col-md-4">
@@ -138,7 +140,7 @@
                             <div class="row cardmq">
                                 <div class="col-md-8">
                                     <h3>BURGA XTREME</h3>
-                                    <p>Hamburguesa de 5 medallones de carne servida en pan de papa, con bacon y cheddar.</p><p class="precio">$4.999</p>
+                                    <p>Hamburguesa de 5 medallones de carne servida en pan de papa, con bacon y cheddar.</p><p class="precio"></p>
                                     <form data-id="4" action=""><input type="submit" value="AGREGAR AL CARRO"class="button agregarCarrito" >
                                 </div>
                                 <div class="col-md-4">

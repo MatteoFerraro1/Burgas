@@ -16,3 +16,19 @@
     font-weight: bold;
     font-size: 2em;
 }
+.vaciarCarrito{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    animation: none;
+    cursor: pointer;
+}
+.borrarProducto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    animation: none;
+    cursor: pointer;
+  
+}
