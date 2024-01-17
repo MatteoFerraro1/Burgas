@@ -53,7 +53,7 @@ function dibujarcarritoHTML(){
         fila.innerHTML = `
         <td"><img src="${producto.imagen}" class="imgProducto"/></td>
         <td>"${producto.titulo}"</td>
-        <td>"${producto.precio.slice(0,producto.precio.length -1)}"</td>
+        <td>"${producto.precio}"</td>
         <td>"${producto.cantidad}"</td>
         <td><div class="borrarProducto" data-id="${producto.id}"><img src="../assets/icon/X.ico" width="15px" class="borrarProducto" alt="Eliminar producto"></div></td>
         `;
